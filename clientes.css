@@ -1,0 +1,37 @@
+.clients-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.clients-paragraph {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 40rem;
+    margin-left: 6rem;
+
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3rem;
+}
+
+.country {
+    width: 8rem;
+    height: 4rem;
+    margin: 1.5rem;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+h3 {
+    opacity: initial;
+}

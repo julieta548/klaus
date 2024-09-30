@@ -10,6 +10,14 @@ span {
     font-weight: 800;
 }
 
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: #ffffff;
+}
+
 .navbar {
     width: 20rem;
     height: 100%;
@@ -41,7 +49,7 @@ span {
     width: 11rem;
 }
 
-.home {
+.template {
     background-image: url('./images/image-1.png');
     background-size: cover;
     background-color: black;
@@ -52,6 +60,8 @@ span {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
 
 .home-paragraph {
