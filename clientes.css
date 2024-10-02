@@ -27,11 +27,21 @@
     width: 8rem;
     height: 4rem;
     margin: 1.5rem;
-    background-color: black;
+    background-color: rgb(87, 82, 82);
     border-radius: 15px;
     box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease;
 }
 
-h3 {
-    opacity: initial;
+.country:hover {
+    background-color: black;
 }
+
+.pais-boton {
+    font-family: Inter;
+    font-weight: 300;
+}
+

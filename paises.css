@@ -1,0 +1,32 @@
+.contenedor-argentina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-pais {
+    color: #ededed;
+    font-size: 2rem;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.atras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-atras {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
