@@ -2,6 +2,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 25rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin: 0 5rem 0 5rem;
+}
+
+.contenedor-brasil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 21rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin: 0 5rem 0 5rem;
+}
+
+.contenedor-chile {
+    width: 90%;
+    height: 12rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin: 0 5rem 2rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-venezuela {
+    width: 80%;
+    height: 5rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin: 0 5rem 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-peru {
+    width: 80%;
+    height: 4rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin: 0 5rem 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-ecuador {
+    width: 80%;
+    height: 5rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin: 0 5rem 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pais {
@@ -20,6 +80,24 @@
     font-weight: 400;
 }
 
+.parrafo-argentina,
+.parrafo-brasil,
+.parrafo-chile,
+.parrafo-venezuela,
+.parrafo-ecuador,
+.parrafo-peru {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 300;
+    word-wrap: break-word;
+    line-height: 28px;
+}
+
+
 .atras {
     display: flex;
     flex-direction: column;
@@ -31,4 +109,53 @@
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+    .contenedor-argentina {
+        width: 80%;
+        height: 53rem;
+        padding: 1rem;
+    }
+
+    .contenedor-brasil {
+        width: 90%;
+        height: 40rem;
+    }
+
+    .contenedor-chile {
+        width: 90%;
+        height: 22rem;
+    }
+
+    .contenedor-venezuela {
+        height: 5rem;
+    }
+
+    .pais {
+        margin-left: 0;
+    }
+
+    .parrafo-argentina {
+        font-size: 17px;
+        height: 50rem;
+
+    }
+
+    .parrafo-brasil {
+        font-size: 17px;
+        height: 88%;
+    }
+
+    .parrafo-chile,
+    .parrafo-venezuela,
+    .parrafo-ecuador {
+        font-size: 17px;
+
+    }
+
+
+    .template {
+        height: 75rem;
+    }
 }
