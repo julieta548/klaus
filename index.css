@@ -145,8 +145,9 @@ nav {
 
 .logo-burger {
     width: 10rem;
+    margin-left: 1rem;
 }
-/* Ocultar el menú por defecto en móvil */
+
 .menu {
     list-style-type: none;
     padding: 0;
@@ -172,14 +173,14 @@ nav {
     font-family: Inter;
 }
 
-/* Mostrar menú solo cuando esté activo */
+
 .menu.active {
     display: flex;
     width: 24rem;
     align-items: center;
 }
 
-/* Media query para dispositivos móviles */
+
 @media only screen and (max-width: 768px) {
 
     nav {
