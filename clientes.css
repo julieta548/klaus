@@ -45,6 +45,9 @@
     font-family: Inter;
     font-weight: 300;
 }
+.template{
+    background-image: url("./images/E-21.000_page-0001.jpg") ;
+}
 
 @media only screen and (max-width: 768px) { 
     .clients-container {
