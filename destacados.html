@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./destacados.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +14,7 @@
     <title>Klaus</title>
   </head>
   <body>
-    <div class="template">
+    <div class="template dest">
       <div class="navbar">
         <div class="logo">
           <img class="img-logo" src="./images/logo.png" alt="" />
@@ -21,9 +22,64 @@
         <div class="menu-buttons">
           <a href="./index.html"><h3 class="menu-button">INICIO</h3></a>
           <a href="./clientes.html"><h3 class="menu-button">CLIENTES</h3></a>
-          <a href="./destacados.html"><h3 class="menu-button" style="font-weight: 700;">DESTACADOS</h3></a>
-          <a href="./encuentre.html"><h3 class="menu-button">ENCUENTRE SU PRODUCTO</h3></a>
+          <a href="./destacados.html"
+            ><h3 class="menu-button" style="font-weight: 700">DESTACADOS</h3></a
+          >
+          <a href="./encuentre.html"
+            ><h3 class="menu-button">ENCUENTRE SU PRODUCTO</h3></a
+          >
           <a href="./contacto.html"><h3 class="menu-button">CONTACTO</h3></a>
+        </div>
+      </div>
+
+      <nav>
+        <div class="burger">
+          <img class="logo-burger" src="./images/logo.png" alt="">
+          <div class="menu-hamburguesa" onclick="toggleMenu()">
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+          </div>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./clientes.html">CLIENTES</a></li>
+          <li><a href="./destacados.html">DESTACADOS</a></li>
+          <li><a href="./encuentre.html">ENCUENTRE SU PRODUCTO</a></li>
+          <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <div class="destacados">
+        <div class="destacados-1">
+          <img class="deschaladora" src="./images/deschaladora.png" alt="" />
+          <div class="descripcion">
+            <h3 class="titulo-1">DESCHALADORA <br> DE MAÍZ</h3>
+            <div class="botones-descripcion">
+              <a
+                href="http://www.youtube.com/watch?v=KDq3FIdz_4Q"
+                target="_blank"
+                ><div class="boton-descripcion"><h3 style="font-weight: 300; color: #ededed;">Video</h3></div></a
+              >
+              <a href="./pdf/FOLLETO DESCHALADORAS.pdf"
+                ><div class="boton-descripcion"><h3 style="font-weight: 300; color: #ededed;">Folleto</h3></div></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="destacados-2">
+          <div class="descripcion-2">
+            <h3 class="titulo-1">DESGRANADORA <br> DE MAÍZ</h3>
+            <div class="botones-descripcion-2">
+              <a
+                href="http://www.youtube.com/watch?v=KDq3FIdz_4Q"
+                target="_blank"
+                ><div class="boton-descripcion-2"><h3 style="font-weight: 300; color: #ededed;">Video</h3></div></a
+              >
+            </div>
+          </div>
+          <img class="deschaladora" src="./images/deschaladora.png" alt="" />
         </div>
       </div>
     </div>

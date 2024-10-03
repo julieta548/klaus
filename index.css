@@ -26,6 +26,7 @@ h3 {
     align-items: center;
     justify-content: space-around;
     background-color: #ffffff;
+    position: fixed;
 }
 
 .img-logo {
@@ -64,6 +65,10 @@ h3 {
     grid-template-columns: 1fr 3fr;
 }
 
+.home-paragraph-container {
+    margin-left: 23rem;
+}
+
 .home-paragraph {
     margin: 0 12rem 0 12rem;
 }
@@ -80,4 +85,108 @@ h3 {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .template {
+        background-size: contain;
+        background-repeat: repeat;
+        align-items: center;
+        height: 80rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .home-paragraph-container {
+        margin: 0 1.5rem 5rem 1.5rem;
+    }
+
+    .home-paragraph {
+        margin: 5rem 1.5rem 5rem 1.5rem;
+        width: 20rem;
+        text-align: center;
+    }
+}
+
+
+nav {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    display: none;
+    align-self: flex-end;
+}
+
+/* Estilo del menú hamburguesa */
+.menu-hamburguesa {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-hamburguesa .linea {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(87, 85, 85);
+    margin: 5px 0;
+}
+
+.burger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 22.5rem;
+}
+
+.logo-burger {
+    width: 10rem;
+}
+/* Ocultar el menú por defecto en móvil */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 62px; /* Justo debajo del menú hamburguesa */
+}
+
+.menu li {
+    border-bottom: none;
+}
+
+.menu li a {
+    color: rgb(87, 85, 85);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-family: Inter;
+}
+
+/* Mostrar menú solo cuando esté activo */
+.menu.active {
+    display: flex;
+    width: 24rem;
+    align-items: center;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+
+    nav {
+        display: block;
+    }
+
+    .menu {
+        display: none; /* Mantener el menú oculto hasta que se haga clic */
+    }
 }

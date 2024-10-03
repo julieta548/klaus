@@ -1,0 +1,75 @@
+.dest {
+    background-image: url(./images/image-1.png);
+    background-repeat: repeat-y;
+    height: 60rem;
+    align-items: unset;
+}
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 25rem;
+    justify-content: space-around;
+}
+
+.destacados-1,
+.destacados-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+
+}
+
+.deschaladora {
+    width: 25rem;
+    border-radius: 12px;
+}
+
+.descripcion,
+.descripcion-2 {
+    margin: 2rem;
+}
+
+.descripcion-2 {
+    text-align: end;
+}
+
+.titulo-1 {
+    font-size: 2.3rem;
+    font-family: Inter;
+    font-weight: 300;
+}
+
+.botones-descripcion,
+.botones-descripcion-2 {
+    display: flex;
+}
+
+.boton-descripcion,
+.boton-descripcion-2 {
+    width: 6rem;
+    height: 3rem;
+    background-color: rgb(92, 90, 90);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 0;
+    transition: background-color 0.5s ease;
+
+}
+
+.boton-descripcion:hover,
+.boton-descripcion-2:hover {
+    background-color: black;
+}
+
+.botones-descripcion-2 {
+    justify-content: end;
+}
+
+.boton-descripcion-2 {
+    margin: 1rem 0rem 1rem 1rem;
+}
