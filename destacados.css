@@ -1,8 +1,18 @@
 .dest {
     background-image: url(./images/image-1.png);
+    background-size: contain;
     background-repeat: repeat-y;
-    height: 60rem;
+    height: 96rem;
     align-items: unset;
+}
+
+.titulo-destacados {
+    font-family: Inter;
+    color: #ededed;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 5rem;
 }
 
 .destacados {
@@ -14,11 +24,13 @@
 }
 
 .destacados-1,
-.destacados-2 {
+.destacados-2,
+.destacados-3 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90%;
+    margin-bottom: 2rem;
 
 }
 
@@ -72,4 +84,59 @@
 
 .boton-descripcion-2 {
     margin: 1rem 0rem 1rem 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .dest {
+        display: flex;
+        align-items: center;
+        height: 123rem;
+    }
+
+    .titulo-destacados {
+        font-size: 2rem;
+    }
+
+    .destacados {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .destacados-1,
+    .destacados-3 {
+        flex-direction: column;
+    }
+
+    .destacados-2 {
+        flex-direction: column-reverse;
+    }
+
+    .deschaladora {
+        width: 17rem;
+    }
+
+    .descripcion,
+    .descripcion-2 {
+        text-align: center;
+    }
+
+    .botones-descripcion,
+    .botones-descripcion-2 {
+        justify-content: center
+    }
+
+    .titulo-1 {
+        font-size: 1.3rem;
+    }
+
+    .boton-descripcion, .boton-descripcion-2 {
+        width: 5rem;
+        height: 2rem;
+    }
+
+    .video, .folleto {
+        font-size: 1rem;
+    }
+
 }

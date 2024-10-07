@@ -55,7 +55,7 @@ h3 {
     background-size: cover;
     background-color: black;
     opacity: 0.8;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     height: 37.95rem;
     display: flex;
     flex-direction: row;
@@ -91,8 +91,9 @@ h3 {
 .whatsapp {
     width: 100%;
     display: flex;
-    justify-content: end;
-    margin-bottom: 1rem;
+    position: fixed;
+    left: 90%;
+    top: 80%;
 }
 
 .wsp {
@@ -132,8 +133,14 @@ h3 {
     }
 
     .whatsapp {
-        width: 90%;
+        left: 75%;
+        top: 85%;
     }
+    
+    .wsp {
+        width: 3rem;
+    }
+    
 }
 
 
@@ -202,6 +209,7 @@ nav {
     display: flex;
     width: 24rem;
     align-items: center;
+    z-index: 2;
 }
 
 
@@ -213,6 +221,6 @@ nav {
 
     .menu {
         display: none;
-        /* Mantener el menú oculto hasta que se haga clic */
+        
     }
 }

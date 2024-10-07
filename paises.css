@@ -157,5 +157,10 @@
 
     .template {
         height: 75rem;
+        
+    }
+
+    .wsp {
+        width: 3rem;
     }
 }

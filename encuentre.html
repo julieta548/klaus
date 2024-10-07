@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./encuentre.css" />
+    <link rel="stylesheet" href="./destacados.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +15,7 @@
     <title>Klaus</title>
   </head>
   <body>
-    <div class="template">
+    <div class="template enc dest">
       <div class="navbar">
         <div class="logo">
           <img class="img-logo" src="./images/logo.png" alt="" />
@@ -21,31 +23,157 @@
         <div class="menu-buttons">
           <a href="./index.html"><h3 class="menu-button">INICIO</h3></a>
           <a href="./clientes.html"><h3 class="menu-button">CLIENTES</h3></a>
-          <a href="./destacados.html"><h3 class="menu-button">DESTACADOS</h3></a>
-          <a href="./encuentre.html"><h3 class="menu-button">ENCUENTRE SU PRODUCTO</h3></a>
+          <a href="./destacados.html"
+            ><h3 class="menu-button">DESTACADOS</h3></a
+          >
+          <a href="./encuentre.html"
+            ><h3 class="menu-button">ENCUENTRE SU PRODUCTO</h3></a
+          >
           <a href="./contacto.html"><h3 class="menu-button">CONTACTO</h3></a>
         </div>
       </div>
-    </div>
+      <nav>
+        <div class="burger">
+          <img class="logo-burger" src="./images/logo.png" alt="" />
+          <div class="menu-hamburguesa" onclick="toggleMenu()">
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+          </div>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./clientes.html">CLIENTES</a></li>
+          <li><a href="./destacados.html">DESTACADOS</a></li>
+          <li><a href="./encuentre.html">ENCUENTRE SU PRODUCTO</a></li>
+          <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
 
-    <nav>
-      <div class="burger">
-        <img class="logo-burger" src="./images/logo.png" alt="">
-        <div class="menu-hamburguesa" onclick="toggleMenu()">
-          <div class="linea"></div>
-          <div class="linea"></div>
-          <div class="linea"></div>
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown2()">
+          Tecnologías aplicables
+          <img src="./images/down.svg" alt="" />
+        </button>
+        <div id="dropdown-content-2" class="dropdown-content">
+          <p>
+            - Líneas de elaboración de conservas vegetales (choclo, tomate,
+            durazno, frutilla, etc) <br />
+            <br />
+            - Líneas de elaboración de pulpas de frutas, jugos, dulces y
+            mermeladas <br />
+            <br />
+            - Líneas de elaboracion de conservas vegetales (choclo, tomate,
+            durazno, frutilla, etc) <br />
+            <br />
+            - Líneas de elaboración de pulpas de frutas, jugos, dulces y
+            mermeladas
+          </p>
         </div>
       </div>
-      <ul class="menu" id="menu">
-        <li><a href="./index.html">INICIO</a></li>
-        <li><a href="./clientes.html">CLIENTES</a></li>
-        <li><a href="./destacados.html">DESTACADOS</a></li>
-        <li><a href="./encuentre.html">ENCUENTRE SU PRODUCTO</a></li>
-        <li><a href="./contacto.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-    <script src="./scripts.js"></script>
 
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown()">
+          Máquinas usadas en stock
+          <img src="./images/down.svg" alt="" />
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <p>
+            Las mismas se entregan reacondicionadas a nuevas con garantía de 1
+            año. Por otras máquinas,
+            <a
+              style="text-decoration: none; color: #ededed; font-weight: 600"
+              href=""
+              >consultar</a
+            >
+          </p>
+          <div class="maquinas">
+            <div class="maquina">
+              <h3>Cocedor continuo de frutas de pepita y carozo marca ROSSI</h3>
+              <img src="./images/cocedor.jpg" alt="" />
+            </div>
+
+            <div class="maquina">
+              <h3>
+                Remachadora automática de 4 cabezales. Marca METALGRAF. Reacondicionada a nueva
+              </h3>
+              <img src="./images/cocedor.jpg" alt="" />
+            </div>
+
+            <div class="maquina">
+              <h3>
+                Envasadora automática y rotativa de 6 pistones, marca CÓNDOR. Se
+                entrega reacondicionada a nueva con garantía
+              </h3>
+              <img src="./images/cocedor.jpg" alt="" />
+            </div>
+
+            <div class="maquina">
+              <h3>
+                Cocedor continuo de frutas de pepita y carozo marca Rossi.
+              </h3>
+              <img src="./images/cocedor.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="titulo-galeria">GALERÍA</h2>
+
+      <div class="slider">
+        <div class="slider-container">
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 1" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 2" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 3" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 1" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 2" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 3" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 1" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 2" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 3" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 1" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 2" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 3" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 1" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 2" />
+          </div>
+          <div class="card">
+            <img src="./images/deschaladora.png" alt="Image 3" />
+          </div>
+        </div>
+
+        <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlider(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
   </body>
 </html>
