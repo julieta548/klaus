@@ -111,7 +111,7 @@
     font-weight: 400;
 }
 .template{
-    background-image: url("./images/E-2050-0813-2_page-0001.jpg");
+    background-image: url("./images/E-2050-0813-2_page-0001.jpg") black 80%;
 }
 @media only screen and (max-width: 768px) {
     .contenedor-argentina {

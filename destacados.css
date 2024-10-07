@@ -1,5 +1,5 @@
 .dest {
-    background-image: url(./images/image-1.png);
+    background-image: url('./images/E-2050-0813-2_page-0001.jpg') black 80%;
     background-size: contain;
     background-repeat: repeat-y;
     height: 96rem;

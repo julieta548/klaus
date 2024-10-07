@@ -45,8 +45,11 @@
     font-family: Inter;
     font-weight: 300;
 }
+
 .template{
-    background-image: url("./images/E-21.000_page-0001.jpg") ;
+    background-image: url("./images/E-21.000_page-0001.jpg") black 80%;
+    background-color: black;
+    opacity: 0.8;
 }
 
 
