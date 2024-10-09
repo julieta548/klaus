@@ -27,6 +27,7 @@ h3 {
     justify-content: space-around;
     background-color: #ffffff;
     position: fixed;
+    top: 0;
 }
 
 .img-logo {
@@ -119,10 +120,11 @@ h3 {
 
     .navbar {
         display: none;
+
     }
 
     .home-paragraph-container {
-        margin: 0 1.5rem 5rem 1.5rem;
+        margin: 3rem 1.5rem 5rem 1.5rem;
     }
 
     .home-paragraph {
@@ -136,16 +138,18 @@ h3 {
         left: 75%;
         top: 85%;
     }
-    
+
     .wsp {
         width: 3rem;
     }
-    
+
 }
 
 
 nav {
-    position: relative;
+    position: absolute;
+    z-index: 3;
+    top: 0;
     background-color: white;
     padding: 10px;
     display: none;
@@ -207,7 +211,7 @@ nav {
 
 .menu.active {
     display: flex;
-    width: 24rem;
+    width: 100%;
     align-items: center;
     z-index: 2;
 }
@@ -217,10 +221,11 @@ nav {
 
     nav {
         display: block;
+        
     }
 
     .menu {
         display: none;
-        
+
     }
 }

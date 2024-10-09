@@ -22,15 +22,21 @@
         <div class="menu-buttons">
           <a href="./index.html"><h3 class="menu-button">INICIO</h3></a>
           <a href="./clientes.html"><h3 class="menu-button">CLIENTES</h3></a>
-          <a href="./destacados.html"><h3 class="menu-button">DESTACADOS</h3></a>
-          <a href="./encuentre.html"><h3 class="menu-button">ENCUENTRE SU PRODUCTO</h3></a>
-          <a href="./contacto.html"><h3 style="font-weight: 700;" class="menu-button">CONTACTO</h3></a>
+          <a href="./destacados.html"
+            ><h3 class="menu-button">DESTACADOS</h3></a
+          >
+          <a href="./encuentre.html"
+            ><h3 class="menu-button">ENCUENTRE SU PRODUCTO</h3></a
+          >
+          <a href="./contacto.html"
+            ><h3 style="font-weight: 700" class="menu-button">CONTACTO</h3></a
+          >
         </div>
       </div>
 
       <nav>
         <div class="burger">
-          <img class="logo-burger" src="./images/logo.png" alt="">
+          <img class="logo-burger" src="./images/logo.png" alt="" />
           <div class="menu-hamburguesa" onclick="toggleMenu()">
             <div class="linea"></div>
             <div class="linea"></div>
@@ -46,18 +52,50 @@
         </ul>
       </nav>
 
-    <div class="formulario-contacto">
-      <div class="imputs">
-        <div class="formulario-nombre"><input type="text" value="Nombre y Apellido"></div>
-        <div class="formulario-email"> <input type="text" value="Email"></div>
+      <div class="formulario-contacto">
+        <form class="form" id="contact-form">
+          <div class="inputs">
+            <div class="formulario-nombre">
+              <label for="">Nombre y Apellido</label>
+              <input type="text" />
+            </div>
+            <div class="formulario-email">
+              <label for="">Email</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="cuerpo-mensaje">
+            <label for="">Mensaje</label>
+            <textarea class="text-area" type="text"></textarea>
+          </div>
+          <input class="boton" type="submit" value="Enviar" />
+        </form>
       </div>
-
-      <div class="cuerpo-mensaje"><textarea class="text-area" type="text"></textarea></div>
-    <div class="formulario-enviar"><h3>Enviar</h3></div>
-    </div>
-
+      <div class="whatsapp">
+        <a href="https://wa.me/+5492615635908" target="_blank"
+          ><img class="wsp" src="./images/wsp.png" alt=""
+        /></a>
+      </div>
     </div>
     <script src="./scripts.js"></script>
-
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("service_juc5nb3", "template_88g215o", this).then(
+              () => {
+                alert("¡Enviado con éxito!");
+              },
+              (error) => {
+                alert("Falló el envío", error);
+              }
+            );
+          });
+      };
+    </script>
   </body>
 </html>

@@ -1,9 +1,33 @@
 .dest {
-    background-image: url('./images/E-2050-0813-2_page-0001.jpg') black 80%;
     background-size: contain;
     background-repeat: repeat-y;
     height: 96rem;
     align-items: unset;
+}
+
+.bg {
+    background-image: url('./images/E-2050-0813-2_page-0001.jpg');
+    background-size: contain;
+    background-color: black;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 96rem;
 }
 
 .titulo-destacados {
@@ -21,6 +45,8 @@
     width: 80%;
     margin-left: 25rem;
     justify-content: space-around;
+    position: relative;
+    z-index: 2;
 }
 
 .destacados-1,
@@ -92,6 +118,11 @@
         display: flex;
         align-items: center;
         height: 123rem;
+        justify-content: center;
+    }
+
+    .overlay {
+        height: 123rem;
     }
 
     .titulo-destacados {
@@ -130,13 +161,29 @@
         font-size: 1.3rem;
     }
 
-    .boton-descripcion, .boton-descripcion-2 {
+    .boton-descripcion,
+    .boton-descripcion-2 {
         width: 5rem;
         height: 2rem;
     }
 
-    .video, .folleto {
+    .video,
+    .folleto {
         font-size: 1rem;
+    }
+
+    
+    nav {
+        padding: 10px 10px !important;
+        width: 100%;
+    }
+
+    .burger {
+        width: 100%;
+    }
+
+    .bg {
+        flex-direction: column;
     }
 
 }

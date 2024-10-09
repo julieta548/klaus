@@ -4,24 +4,36 @@
     align-items: center;
     flex-direction: column;
     width: 30rem;
-    height: 21rem;
+    height: 28rem;
     background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     margin: 0 5rem 0 32rem;
+    padding: 1rem;
 
 }
-.imputs{
+
+.inputs {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
-.text-area{
-    width: 20rem;
+
+.text-area {
+    width: 22rem;
     height: 10rem;
-    background-color: rgb(247, 244, 244);
+    background-color: rgb(0, 0, 0, 0.8);
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #ededed;
+    padding: 1rem;
 }
-.formulario-enviar{
-    width: 8rem;
-    height: 4rem;
+
+.formulario-enviar {
+    width: 7rem;
+    height: 3rem;
     margin: 1.5rem;
     background-color: rgb(87, 82, 82);
     border-radius: 15px;
@@ -32,3 +44,39 @@
     transition: background-color 0.5s ease;
 }
 
+.formulario-enviar:hover {
+    background-color: black;
+}
+
+.formulario-enviar h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.formulario-nombre label,
+.formulario-email label {
+    font-size: 1rem;
+    color: #ededed;
+    font-weight: 300;
+}
+
+.formulario-nombre input,
+.formulario-email input {
+    color: #ededed;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(0, 0, 0, 0.8);
+    border: none;
+
+}
+
+.cuerpo-mensaje {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo-mensaje label {
+    color: #ededed;
+    font-weight: 300;
+}
